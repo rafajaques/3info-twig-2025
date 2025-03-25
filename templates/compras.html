@@ -16,6 +16,9 @@ Página de compras
     {% for compra in compras %}
         <li>
             {{ compra.item }}
+            |
+            <a href="compras_editar.php?id={{ compra.id }}">Editar</a>
+            |
             <a href="compras_apagar.php?id={{ compra.id }}">X</a>
         </li>
     {% endfor %}
